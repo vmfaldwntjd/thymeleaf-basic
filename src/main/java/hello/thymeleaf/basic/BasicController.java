@@ -49,11 +49,11 @@ public class BasicController {
 
     @Data
     static class User {
-        private String name;
+        private String username;
         private int age;
 
-        public User(String name, int age) {
-            this.name = name;
+        public User(String username, int age) {
+            this.username = username;
             this.age = age;
         }
     }

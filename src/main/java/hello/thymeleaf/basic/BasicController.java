@@ -69,6 +69,12 @@ public class BasicController {
         return "basic/link";
     }
 
+    @GetMapping("/literal")
+    public String literal(Model model) {
+        model.addAttribute("date", "String!");
+        return "basic/literal";
+    }
+
     @Component("helloBean")
     static class HelloBean {
 
